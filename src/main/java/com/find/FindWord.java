@@ -1,11 +1,13 @@
+package com.find;
+
+import com.google.common.collect.HashBasedTable;
+import com.google.common.collect.Table;
+import com.google.common.collect.Table.Cell;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-
-import com.google.common.collect.Table;
-import com.google.common.collect.HashBasedTable;
-import com.google.common.collect.Table.Cell;
 
 /*
  * author: Frank Giordano 10/24/2015
@@ -14,7 +16,7 @@ import com.google.common.collect.Table.Cell;
  * http://www.ardendertat.com/2011/12/20/programming-interview-questions-23-find-word-positions-in-text/
  * this program uses google's hashtable implementation - i.e. guava-10.0.jar
  */
-public class Find {
+public class FindWord {
 
     private static Table<String, Integer, ArrayList<Integer>> dictionary;
     private static ArrayList<Integer> wordPositionsInfo;
