@@ -1,15 +1,17 @@
 # findwordpositions-hashtableguava
-A program that implements word dictionary with positions stored using guava library
 
- * author: Frank Giordano 10/24/2015
- * program implements word dictionary with positions stored
- * implements first half of the following link
- * http://www.ardendertat.com/2011/12/20/programming-interview-questions-23-find-word-positions-in-text/
- * this program uses google's hashtable implementation - i.e. guava-10.0.jar
+This program implements word dictionary with positions stored. It implements something similar to the
+first half of the following link:
+ 
+http://www.ardendertat.com/2011/12/20/programming-interview-questions-23-find-word-positions-in-text/
 
+The structure of the code flow is that a text file is read from the current running location and reads
+in every line and looks at each word and stores it location/position within the line.
 
-Please note this problem stores the first character position of the word within the line number.. 
-It does not store the occurence position of the entire string word.. 
+The main data structure is google's hashtable implementation called 'Table' from Guava Java Library. 
+
+NOTE: This problem stores the first character position of the word within the line number.
+It does not store the occurence position of the entire string word.
 
 For instance,
 
@@ -21,3 +23,15 @@ etc
 
 whereas all the words positions would be:
 test located at position 0 and frank located at position 1 and giordano located at position 3
+
+## Setup, Installation, and running the application:
+
+1 - Install Java 8
+
+2 - Install Maven 3.6.3 or higher
+
+At project's root directory, perform the following commands:
+
+1 - mvn clean install
+
+2 - java -jar .\target\FindWord-1.0-SNAPSHOT-jar-with-dependencies.jar

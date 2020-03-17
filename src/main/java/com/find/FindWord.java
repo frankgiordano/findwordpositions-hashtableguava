@@ -20,7 +20,7 @@ public class FindWord {
 
     private static Table<String, Integer, ArrayList<Integer>> dictionary;
     private static ArrayList<Integer> wordPositionsInfo;
-    private static String fileName = "/Users/FrankGiordano/Documents/workspace/FindWordPositionsByHashTableGuava/t3.txt";
+    private static String fileName = "t3.txt";
 
     public static void main(String args[]) {
 
@@ -31,7 +31,7 @@ public class FindWord {
             input = new byte[80];
             System.out.println("Enter a word to search the following file for location info");
             System.out.println(fileName);
-            System.out.print(":");
+            System.out.print(": ");
             try {
                 System.in.read(input);
             } catch (IOException e) {
