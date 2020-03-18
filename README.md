@@ -32,6 +32,6 @@ test located at position 0 and frank located at position 1 and giordano located 
 
 At project's root directory, perform the following commands:
 
-1 - mvn clean install
+3 - mvn clean install
 
-2 - java -jar .\target\FindWord-1.0-SNAPSHOT-jar-with-dependencies.jar
+4 - java -jar .\target\FindWord-1.0-SNAPSHOT-jar-with-dependencies.jar
