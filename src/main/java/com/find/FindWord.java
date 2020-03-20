@@ -15,8 +15,8 @@ import java.util.ArrayList;
  *
  * http://www.ardendertat.com/2011/12/20/programming-interview-questions-23-find-word-positions-in-text/
  *
- * The structure of the code flow is that a text file is read from the current running location and reads
- * in every line and looks at each word and stores it location/position within the line.
+ * The structure of the code flow is that a given text file is read by each line and looks at each word
+ * within the line and stores its location (line number) and position.
  *
  * The main data structure is google's hashtable implementation called 'Table' from Guava Java Library.
  *
