@@ -27,6 +27,16 @@ public class FindWord {
     private static Table<String, Integer, ArrayList<Integer>> dictionary;
     private static String fileName = "t3.txt";
 
+    public static void search(String searchWord) {
+        if (dictionary != null) {  // use current cache
+            print(searchWord);
+            return;
+        }
+
+        processFile();
+        print(searchWord);
+    }
+
     private static void processFile() {
 
         int position = 0;
@@ -129,8 +139,7 @@ public class FindWord {
         return result.toString();
     }
 
-    public static void print(String searchWord) {
-        processFile();
+    private static void print(String searchWord) {
         if (!dictionary.containsRow(searchWord)) {
             System.out.println("The following word " + searchWord + " was not found.");
         } else {
@@ -172,7 +181,7 @@ public class FindWord {
             }
             searchWord = (new String(input, 0, input.length)).trim();
             if (searchWord.length() > 0) {
-                FindWord.print(searchWord);
+                FindWord.search(searchWord);
             } else {
                 System.exit(0);
             }
