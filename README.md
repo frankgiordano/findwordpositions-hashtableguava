@@ -33,4 +33,4 @@ At project's root directory, perform the following commands:
 
 3 - mvn clean install
 
-4 - java -jar .\target\FindWord-1.0-SNAPSHOT-jar-with-dependencies.jar
+4 - java -jar .\target\FindWord.jar
