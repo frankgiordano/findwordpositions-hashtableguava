@@ -10,7 +10,7 @@ The structure of the code flow is that a given text file is read by each line an
 The main data structure is google's hashtable implementation called 'Table' from Guava Java Library. 
 
 NOTE: This problem stores the first character position of the word within the line number.
-It does not store the occurence position of the entire string word.
+It does not store the occurrence position of the entire string word.
 
 For instance,
 
@@ -33,4 +33,4 @@ At project's root directory, perform the following commands:
 
 3 - mvn clean install
 
-4 - java -jar .\target\FindWord.jar
+4 - java -jar .\target\FindWordPositions.jar
